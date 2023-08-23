@@ -1,0 +1,277 @@
+/*
+
+
+#2a0cd7
+
+COLORS:-
+main color: #a7c5f2
+shades:-
+#111418
+#434f61
+#96b1da
+tints:-
+#edf3fc
+#e5eefb
+#dce8fa
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(to right, #dce8fa, #edf3fc);
+  font-family: sans-serif;
+  min-height: 100vh;
+  width: 80rem;
+  margin: auto;
+  border: 1px solid #a7c5f2;
+  color: #111418;
+}
+
+/* NAVIGATION */
+
+.navigation-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  font-size: 1.4rem;
+}
+
+.navigation-profilename {
+  background: linear-gradient(to right bottom, #aac30b, #434f61);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navigation-main-list-link:link,
+.navigation-main-list-link:visited {
+  color: #111418;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.navigation-main-list-link:hover,
+.navigation-main-list-link:active {
+  color: #434f61;
+}
+
+/* HERO SECTION */
+
+.hero {
+  display: flex;
+  margin-bottom: 4.8rem;
+}
+
+.hero-text-box {
+  padding: 6rem 2rem;
+}
+
+.hero-text-heading {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text-description {
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
+
+.hero-img {
+  width: 30rem;
+  height: auto;
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+.btn-downloadcv:link,
+.btn-downloadcv:visited,
+.btn-contactme:link,
+.btn-contactme:visited {
+  background-color: #a7c5f2;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: #111418;
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 1rem;
+}
+
+.btn-downloadcv:hover,
+.btn-downloadcv:active,
+.btn-contactme:hover,
+.btn-contactme:active {
+  background-color: #111418;
+  color: #a7c5f2;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  display: flex;
+  margin-bottom: 4.8rem;
+}
+
+.about-box {
+  flex-basis: 50%;
+  padding: 2rem;
+}
+
+.about-heading {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.about-description-para1,
+.about-description-para2 {
+  line-height: 1.4;
+  font-size: 1.8rem;
+}
+
+.education-box {
+  flex-basis: 40rem;
+  padding: 2rem;
+  align-self: center;
+}
+
+.education-heading {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.education-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.education-card {
+  width: 100%;
+  height: 33.33%;
+  font-size: 1.8rem;
+  font-family: inherit;
+  margin-bottom: 2.4rem;
+  background-color: #e5eefb;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px #96b1da;
+}
+
+/* SKILLS */
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4.8rem;
+}
+
+.specialize-box {
+  padding: 2rem;
+}
+
+.specialize-heading {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.specialize-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  gap: 1rem;
+}
+
+.toolbox {
+  text-align: center;
+}
+
+.toolbox figcaption {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.toolbox-img {
+  display: flex;
+  justify-content: center;
+}
+
+.toolbox img {
+  display: inline-block;
+}
+
+/* PROJECT */
+
+.project {
+  margin-bottom: 4.8rem;
+  padding: 2rem;
+}
+
+.project-heading {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.project-img {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
+}
+
+.project img {
+  width: 80%;
+  height: auto;
+  display: inline-block;
+  box-shadow: 0 0 10px 5px #96b1da;
+}
+
+/* CONTACT */
+
+.contact {
+  margin-bottom: 4.8rem;
+  padding: 2rem;
+}
+
+.contact-heading {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.contact-description {
+  line-height: 1.4;
+  font-size: 1.8rem;
+}
+
+.contact-description > a:link,
+.contact-description > a:visited {
+  text-decoration: none;
+  color: #111418;
+}
+
+.contact-description > a:hover,
+.contact-description > a:active {
+  text-shadow: 0 0 10px #111418;
+}
+
+/* FOOTER */
+
+.footer {
+  margin-bottom: 4.8rem;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
